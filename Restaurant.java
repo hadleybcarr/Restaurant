@@ -67,8 +67,8 @@ public class Restaurant {
   public void createTables(){
     StdDraw.setScale(0, length);
     
-    for(int r = 0; r < length; r++){
-      for(int c = 0; c < width; c++){
+    for(int r = 0; r < width; r++){
+      for(int c = 0; c < length; c++){
         StdDraw.setPenColor(StdDraw.WHITE);
         colorSeat[r][c] = StdDraw.WHITE;
         StdDraw.filledSquare(r + 0.5, c + 0.5, 0.4);
