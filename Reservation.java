@@ -3,6 +3,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * this class handles reservations, the hashmap allows you to look up by name in the reservation list.
+ * included are methods for modifying the reservations, as well as standard getter/setter methods
+ */
 public class Reservation {
   private String name;
   private String phoneNum;
@@ -56,7 +60,12 @@ public class Reservation {
   public int getNumGuests(){
     return numGuests;
   }
-  
+
+  /**
+   *
+   * @param n indicates number of guests you want to add or subtract
+   * this method and the removeGuests method are to aid in modifying reservations
+   */
   public void addGuests(int n){
     numGuests += n;
   }
