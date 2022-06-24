@@ -7,6 +7,7 @@ import java.util.Scanner;
  * this class handles reservations, the hashmap allows you to look up by name in the reservation list.
  * included are methods for modifying the reservations, as well as standard getter/setter methods
  */
+
 public class Reservation {
   private String name;
   private String phoneNum;
@@ -32,7 +33,7 @@ public class Reservation {
     this.numGuests = numGuests;
     
   }
-  
+
   public String getName(){
     return name;
   }
@@ -52,9 +53,17 @@ public class Reservation {
   public String getDate(){
     return date;
   }
+
+  public void setDate(String date){
+    this.date = date;
+  }
   
   public String getTime(){
     return time;
+  }
+
+  public void setTime(String time){
+    this.time = time;
   }
   
   public int getNumGuests(){
@@ -63,6 +72,7 @@ public class Reservation {
 
   /**
    *
+
    * @param n indicates number of guests you want to add or subtract
    * this method and the removeGuests method are to aid in modifying reservations
    */
@@ -117,9 +127,9 @@ public class Reservation {
         System.out.println("What is your name?");
         String resName = scan.nextLine();
         System.out.print("Your reservation is "+ReservationsbyNames.get(resName));
-        
-        
+
+
       }
     }
   }
-} 
+}
